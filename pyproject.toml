@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "example-package-kendall_m"
-version = "0.1.1"
+dynamic = ["version"]
 dependencies = [
   "numpy"
 ]
@@ -27,3 +27,7 @@ test = ["pytest"]
 [project.urls]
 "Homepage" = "https://kmongird.github.io/example-package-kendall_m"
 "Source Code" = "https://github.com/kmongird/example-package-kendall_m"
+
+
+[tool.hatch]
+version.path = "src/example_package_kendall_m/__init__.py"
